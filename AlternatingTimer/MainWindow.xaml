@@ -1,0 +1,11 @@
+﻿<Window x:Class="AlternatingTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Deskercise" Width="{x:Static SystemParameters.VirtualScreenWidth}" SizeToContent="Height">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Padding="10" TextAlignment="Center" FontWeight="Bold" FontSize="20" Text="{Binding Path=TextContext, RelativeSource={RelativeSource  AncestorType={x:Type Window}}}" Background="{Binding Path=BackgroundContext, RelativeSource={RelativeSource  AncestorType={x:Type Window}}}"></TextBlock>
+    </Grid>
+</Window>
+    

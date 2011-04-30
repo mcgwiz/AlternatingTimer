@@ -1,0 +1,9 @@
+
+*.user
+*.suo
+/_ReSharper.AlternatingTimer
+/AlternatingTimer/obj
+/AlternatingTimer/bin
+/.svn
+/AlternatingTimer/Properties/.svn
+/AlternatingTimer/.svn
