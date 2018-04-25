@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows;
@@ -10,8 +11,8 @@ namespace AlternatingTimer {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow {
-        private const int REST_SECONDS = 240;
-        private const int GO_SECONDS = 60;
+        private static readonly int REST_SECONDS = int.Parse(ConfigurationManager.AppSettings["RestSeconds"]);
+        private static readonly int GO_SECONDS = int.Parse(ConfigurationManager.AppSettings["GoSeconds"]);
 
         public bool IsResting
         {
